@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="InterestRateTableViewCell" rowHeight="80" id="KGk-i7-Jjw" customClass="InterestRateTableViewCell" customModule="Fintech" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="387" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="387" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HZf-i1-DqX">
+                        <rect key="frame" x="0.0" y="0.0" width="387" height="81"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_interest_rate" translatesAutoresizingMaskIntoConstraints="NO" id="Lvf-RD-gNu">
+                                <rect key="frame" x="14" y="15" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="54O-tJ-Zb2"/>
+                                    <constraint firstAttribute="width" constant="40" id="xdx-WS-mne"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 tháng" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Csh-ua-zlg">
+                                <rect key="frame" x="70" y="14" width="59" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="rem-Qn-4lG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đến 20.02.2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UoQ-Jh-AyW">
+                                <rect key="frame" x="70" y="46" width="103" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="n18-xf-vHo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.76862745099999996" green="0.76862745099999996" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+3.000.000 VNĐ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UFO-xE-cQD">
+                                <rect key="frame" x="242" y="30" width="129" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="2c4-aY-KWE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.21176470589999999" green="0.72549019609999998" blue="0.56470588239999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="UFO-xE-cQD" secondAttribute="trailing" constant="16" id="FrW-az-QyF"/>
+                            <constraint firstAttribute="height" constant="81" id="ImN-IJ-jVh"/>
+                            <constraint firstItem="Csh-ua-zlg" firstAttribute="top" secondItem="HZf-i1-DqX" secondAttribute="top" constant="14" id="P4H-Yy-laa"/>
+                            <constraint firstItem="Lvf-RD-gNu" firstAttribute="leading" secondItem="HZf-i1-DqX" secondAttribute="leading" constant="14" id="bLe-es-3dk"/>
+                            <constraint firstItem="Csh-ua-zlg" firstAttribute="leading" secondItem="Lvf-RD-gNu" secondAttribute="trailing" constant="16" id="iod-pp-WY6"/>
+                            <constraint firstItem="Lvf-RD-gNu" firstAttribute="top" secondItem="HZf-i1-DqX" secondAttribute="top" constant="15" id="p1E-FX-8JA"/>
+                            <constraint firstItem="UoQ-Jh-AyW" firstAttribute="leading" secondItem="Lvf-RD-gNu" secondAttribute="trailing" constant="16" id="upY-Ls-zyl"/>
+                            <constraint firstItem="UFO-xE-cQD" firstAttribute="top" secondItem="HZf-i1-DqX" secondAttribute="top" constant="30" id="wAu-Ef-seH"/>
+                            <constraint firstItem="UoQ-Jh-AyW" firstAttribute="top" secondItem="Csh-ua-zlg" secondAttribute="bottom" constant="10" id="xkI-PI-BhP"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="HZf-i1-DqX" secondAttribute="trailing" id="3T7-wR-nQm"/>
+                    <constraint firstAttribute="bottom" secondItem="HZf-i1-DqX" secondAttribute="bottom" id="NfX-UR-Wtu"/>
+                    <constraint firstItem="HZf-i1-DqX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="UaG-IG-9vf"/>
+                    <constraint firstItem="HZf-i1-DqX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="glR-YV-UL3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <point key="canvasLocation" x="192.0289855072464" y="75"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_interest_rate" width="32" height="32"/>
+    </resources>
+</document>
